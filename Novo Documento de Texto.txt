@@ -1,0 +1,21 @@
+PreOrdem(struct arvore *nodo){
+	if(nodo != NULL){
+		printf("%d", nodo->info);
+	}
+	if(nodo->esquerda != NULL)
+		PreOrdem(nodo->esquerda);
+	if(nodo->direita != NULL)
+		PreOrdem(nodo->direita);
+} 10, 5, 2, 7, 15, 12, 17
+
+InOrdem(){
+	InOrdem(nodo->esquerda);
+	printf("%d", nodo->info);
+	InOrdem(nodo->direita);
+} 2,5,7,10,12,15,17
+
+PosOrdem(){
+	PosOrdem(nodo->esquerda);	
+	PosOrdem(nodo->direita);
+	printf("%d", nodo->info);
+}
